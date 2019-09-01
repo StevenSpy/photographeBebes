@@ -1,3 +1,34 @@
 footer {
   grid-area: footer;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "infoPerso"
+    "reseauxSociaux";
+
+  .infoPerso {
+    grid-area: infoPerso;
+    text-align: center;
+  }
+
+  .reseauxSociaux {
+    grid-area: reseauxSociaux;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "mail twitter insta";
+    text-align: center;
+  }
+
+  .mail {
+    grid-area: mail;
+  }
+
+  .twitter {
+    grid-area: twitter;
+  }
+
+  .insta {
+    grid-area: insta;
+  }
 }
