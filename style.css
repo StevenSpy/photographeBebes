@@ -48,6 +48,30 @@ nav ul {
 
 footer {
   grid-area: footer;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "infoPerso" "reseauxSociaux";
+}
+footer .infoPerso {
+  grid-area: infoPerso;
+  text-align: center;
+}
+footer .reseauxSociaux {
+  grid-area: reseauxSociaux;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "mail twitter insta";
+  text-align: center;
+}
+footer .mail {
+  grid-area: mail;
+}
+footer .twitter {
+  grid-area: twitter;
+}
+footer .insta {
+  grid-area: insta;
 }
 
 .container {
