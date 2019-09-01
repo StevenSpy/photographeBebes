@@ -1,0 +1,10 @@
+nav {
+  grid-area: nav;
+  justify-self: center;
+
+  ul {
+    display: flex;
+    list-style: none;
+    grid-column-gap: 15rem;
+  }
+}
