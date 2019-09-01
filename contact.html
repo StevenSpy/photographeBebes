@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      href="/images/favicon/faviconPhoto.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>BébéGraphie</title>
   </head>
   <body>
     <div class="contactContainer">
@@ -32,6 +38,53 @@
           <li class="navPrestations">Prestations</li>
         </ul>
       </nav>
+      <section class="sectionFormulaire">
+        <h2 hidden>Formulaire</h2>
+
+        <form method="POST">
+          <label>Votre Prénom :</label>
+          <br />
+          <input
+            type="text"
+            name="prénom"
+            class="Prénom"
+            placeholder="Votre Prénom"
+          />
+          <br />
+          <label>Votre Nom :</label>
+          <br />
+          <input type="text" name="nom" class="Nom" placeholder="Votre Nom" />
+          <br />
+          <label>Votre E-Mail :</label>
+          <br />
+          <input
+            type="email"
+            name="e-mail"
+            class="E-Mail"
+            placeholder="Votre E-Mail"
+          />
+          <br />
+          <label>Prestations :</label>
+          <br />
+          <select name="service" size="1">
+            <option>Enceinte</option>
+            <option>Naissance</option>
+            <option>Bébé / Famille</option>
+          </select>
+          <br />
+          <label>Vos envies :</label>
+          <br />
+          <textarea
+            name="envies"
+            rows="4"
+            cols="40"
+            placeholder="Envies particulières"
+          ></textarea>
+          <br />
+          <input type="submit" value="Envoyer le formulaire" class="envoie" />
+        </form>
+      </section>
+
       <footer>
         <div class="infoPerso">
           <p>
